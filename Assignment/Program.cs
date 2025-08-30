@@ -1,6 +1,6 @@
 ﻿namespace Assignment
 {
-   public delegate string CustomFunc(Book b);
+    public delegate string CustomFunc(Book b);
     internal class Program
     {
         static void Main(string[] args)
@@ -44,7 +44,22 @@
             //LibraryEngine.ProcessBooks(books, delegate (Book b) { return $"Price : {b.Price:c}";});
             ////LibraryEngine.ProcessBooks(books, BookFunctions.GetAuthors);
             ////LibraryEngine.ProcessBooks(books, BookFunctions.GetTitle);
-                #endregion
+            #endregion
+
+            #region Q1.D
+            ////Lambda Expression(GetPublicationDate)
+            //List<Book> books = new List<Book>();
+            //Book book1 = new Book("123", "shams", ["Ahmed", "Mohamed"], new DateTime(22, 12, 3), 40000m);
+            //Book book2 = new Book("123", "Moon", ["Mohamed", "Ali"], new DateTime(22, 12, 3), 77m);
+            //Book book3 = new Book("123", "Earth", ["Mohamed", "Hany"], new DateTime(22, 12, 3), 877m);
+            //books.Add(book1);
+            //books.Add(book2);
+            //books.Add(book3);
+            //LibraryEngine.ProcessBooks(books, b => $"Title : {b.Title}");
+            //LibraryEngine.ProcessBooks(books, b => $"Authors : {string.Join(", ", b.Authors)}" );
+            //LibraryEngine.ProcessBooks(books, b => $"Price : {b.Price:c}");
+
+            #endregion
 
         }
     }
